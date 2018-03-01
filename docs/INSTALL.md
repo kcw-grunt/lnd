@@ -54,10 +54,9 @@ cd $GOPATH/src/github.com/lightningnetwork/lnd
   following command (assumes you already have Go properly installed):
   ```
   go get -u github.com/Masterminds/glide
+  glide install
+  go install . ./cmd/...
   ```
-glide install
-go install . ./cmd/...
-```
 
 **Updating**
 
