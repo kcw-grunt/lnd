@@ -41,13 +41,6 @@
     We recommend placing the above in your .bashrc or in a setup script so that
     you can avoid typing this every time you open a new terminal window.
 
-  * **Glide:** This project uses `Glide` to manage dependencies as well 
-    as to provide *reproducible builds*. To install `Glide`, execute the
-    following command (assumes you already have Go properly installed):
-    ```
-    go get -u github.com/Masterminds/glide
-    ```
-
 ### Installing lnd
 
 With the preliminary steps completed, to install `lnd`, `lncli`, and all
@@ -55,6 +48,13 @@ related dependencies run the following commands:
 ```
 git clone https://github.com/lightningnetwork/lnd $GOPATH/src/github.com/lightningnetwork/lnd
 cd $GOPATH/src/github.com/lightningnetwork/lnd
+
+* **Glide:** This project uses `Glide` to manage dependencies as well 
+  as to provide *reproducible builds*. To install `Glide`, execute the
+  following command (assumes you already have Go properly installed):
+  ```
+  go get -u github.com/Masterminds/glide
+  ```
 glide install
 go install . ./cmd/...
 ```
