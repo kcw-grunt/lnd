@@ -48,7 +48,7 @@ related dependencies run the following commands:
 ```
 git clone https://github.com/lightningnetwork/lnd $GOPATH/src/github.com/lightningnetwork/lnd
 cd $GOPATH/src/github.com/lightningnetwork/lnd
-
+```
 * **Glide:** This project uses `Glide` to manage dependencies as well 
   as to provide *reproducible builds*. To install `Glide`, execute the
   following command (assumes you already have Go properly installed):
